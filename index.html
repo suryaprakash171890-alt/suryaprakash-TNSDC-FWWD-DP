@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surya Prakash | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">Portfolio</a>
+
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="about">About</a>
+        <a href="#" data-page="skills">Skills</a>
+        <a href="#" data-page="project">Projects</a>
+        <a href="#" data-page="certificate">Certificates</a>
+        <a href="#" data-page="contact">Contact</a>
+      </div>
+
+      <!-- Icons -->
+      <div class="nav-icons">
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Page -->
+    <div class="page active" id="home">
+      <section class="hero">
+        <img src="surya prakash.jpeg" alt="Surya Prakash portrait" class="fade-in"
+          style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem;">
+        <h1 class="fade-in">Hi, I'm Surya Prakash <span id="typing"></span></h1>
+        <p class="fade-in">I'm a passionate developer who enjoys creating modern, responsive, and user-friendly web applications.</p>
+        <a href="#" data-page="about" class="btn fade-in">Learn More About Me</a>
+      </section>
+    </div>
+
+    <!-- About Page -->
+    <div class="page" id="about">
+      <section class="about fade-in">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm <strong>Surya Prakash</strong> 👋. I’m a web developer with a passion for creating sleek, modern,
+          and responsive applications. My focus is on writing clean, maintainable code while bringing ideas to life
+          with creative designs and smooth user experiences.
+        </p>
+        <p>
+          I enjoy learning new technologies, solving challenging problems, and collaborating on exciting projects.
+          Outside of coding, I love exploring design trends and improving my development skills.
+        </p>
+        <a href="#" data-page="skills" class="btn">See My Skills</a>
+      </section>
+    </div>
+
+    <!-- Skills Page -->
+    <div class="page" id="skills">
+      <a href="#" data-page="home" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+      <section class="section">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+        <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+            <p>Advanced</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <p>Advanced</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>Intermediate</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>C</h3>
+            <p>Intermediate</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>C++</h3>
+            <p>Intermediate</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Project Page -->
+    <div class="page" id="project">
+      <a href="#" data-page="home" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+      <section class="section">
+        <h2 class="section-title">My Project</h2>
+        <div class="project-container">
+          <div class="project-card">
+            <img src="e-commerce.png" alt="E-Commerce project screenshot" class="project-image">
+            <div class="project-info">
+              <h3>Shopping Website</h3>
+              <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+              <p>An online shopping platform with product listings, cart functionality, and checkout flow.</p>
+              <a href="e-shop.html" class="btn" style="margin-top: 1rem;">View Live</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Certificate Page -->
+    <div class="page" id="certificate">
+      <a href="#" data-page="home" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+      <section class="section">
+        <h2 class="section-title">My Certificate</h2>
+        <div class="certificate-container">
+          <div class="certificate-card">
+            <a href="./Completion Certificate _ SkillsBuild.pdf" target="_blank">
+              <img src="certificate.png" alt="Certificate example" class="certificate-image">
+            </a>
+            <div class="certificate-info">
+              <h3>Web Development Certificate</h3>
+              
+              <p>Certified in building responsive and modern web applications.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div class="page" id="contact">
+      <a href="#" data-page="home" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+      <section class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-links">
+  <a href="mailto:suryaprakash171890@email.com"><i class="fas fa-envelope"></i></a>
+  <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Surya Prakash. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

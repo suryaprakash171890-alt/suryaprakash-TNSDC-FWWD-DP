@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Shop</title>
+  <link rel="stylesheet" href="e-shop.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="#">E-Shop</a>
+
+      <form id="searchForm" class="search">
+        <input id="searchInput" type="search" placeholder="Search products…" aria-label="Search products"/>
+        <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button id="cartToggle" class="icon-btn" title="Open cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cartCount" class="badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Shopping, simplified.</h1>
+          <p>Discover quality products at the best prices. Fast checkout, secure payments, and delightful UI.</p>
+          <a href="#products" class="btn cta">Shop Now</a>
+        </div>
+        <img class="hero-img" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop" alt="Shopping illustration"/>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="container controls">
+      <div class="chips" id="categoryChips">
+        <!-- chips rendered by JS -->
+      </div>
+      <select id="sortSelect" class="select">
+        <option value="featured">Sort: Featured</option>
+        <option value="price-asc">Price: Low → High</option>
+        <option value="price-desc">Price: High → Low</option>
+        <option value="name-asc">Name: A → Z</option>
+        <option value="name-desc">Name: Z → A</option>
+      </select>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="container">
+      <h2 class="section-title">Featured Products</h2>
+      <div id="productGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <!-- Cart Drawer -->
+  <aside id="cartDrawer" class="cart">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cartClose" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-row">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">₹0.00</strong>
+      </div>
+      <div class="cart-row small">
+        <span>Shipping</span>
+        <span>Free</span>
+      </div>
+      <hr/>
+      <div class="cart-row total">
+        <span>Total</span>
+        <strong id="cartTotal">₹0.00</strong>
+      </div>
+      <button class="btn cta full" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> E-Shop. All rights reserved.</p>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="e-shop.js"></script>
+</body>
+</html>
